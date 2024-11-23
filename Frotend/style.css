@@ -1,0 +1,188 @@
+/* Set the background image for the entire page */
+body {
+    background-image: url('rain1.jpg');
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    height: 100vh;
+    text-align: center;
+    animation: change 15s infinite ease-out;
+}
+
+/* Additional styling to make content readable over the background */
+.container {
+    padding: 20px;
+    border-radius: 10px;
+}
+
+/* Navbar styling */
+.navbar {
+    padding: 10px 0;
+    border: none;
+}
+
+.navbar-brand,
+.nav-link {
+    color: white !important;
+}
+
+/* Styling for Weather IO font */
+.navbar-brand {
+    color: black !important;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+    font-weight: bold;
+    font-size: 50px;
+}
+
+/* Adjust font size for responsiveness */
+h1 {
+    font-size: 2.5rem;
+    color: black;
+}
+
+@media (max-width: 768px) {
+    h1 {
+        font-size: 2rem;
+    }
+}
+
+@media (max-width: 576px) {
+    h1 {
+        font-size: 1.5rem;
+    }
+}
+
+/* Adjust margin and padding for different screen sizes */
+.row-cols-1, .col-md-4 {
+    margin-top: 20px;
+}
+
+/* Card styling */
+.card {
+    border: none;
+    border-radius: 10px;
+}
+
+.card-header {
+    font-weight: bold;
+}
+
+/* Ensure responsiveness of the form and inputs */
+.form-control {
+    width: 100%;
+}
+
+/* Navbar form adjustments for mobile view */
+.navbar-toggler {
+    border-color: rgba(255, 255, 255, 0.1);
+}
+
+/* Custom spacing for navbar and form */
+.search-form {
+    display: flex;
+    justify-content: flex-start;
+    width: 100%;
+}
+/* Make the search bar and button transparent */
+.search-form input, .search-form button {
+    background-color: rgba(255, 255, 255, 0.06); /*semi-transparent white */
+    color: rgba(8, 1, 1, 0.738); /* text color */
+     border: 1px solid rgba(255, 255, 255, 0.5); 
+}
+
+/* Focus state for search input */
+.search-form input:focus {
+    background-color: rgba(255, 255, 255, 0.011); 
+    /* border-color: rgba(255, 255, 255, 0.8); more opaque border on focus */
+    /* outline: none; remove default outline */
+}
+
+/* Make the button more transparent */
+.search-form button {
+    background-color: rgba(27, 25, 25, 0.168); /* Transparent dark background */
+    font-weight: bold;
+}
+
+@media (max-width: 768px) {
+    .search-form {
+        width: 80%; /* Adjust width for mobile */
+        margin: 0 auto; /* Center the search bar */
+    }
+}
+
+/* Responsive adjustments for cards */
+.card-header h4 {
+    font-size: 2.1rem;
+}
+
+@media (max-width: 768px) {
+    .card-header h4 {
+        font-size: 1rem;
+    }
+
+    .card-body ul li {
+        font-size: 0.10rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .card-header h4 {
+        font-size: 0.10rem;
+    }
+
+    .card-body ul li {
+        font-size: 0.10rem;
+    }
+}
+
+/* Body background adjustments */
+@media (max-width: 768px) {
+    body {
+        background-attachment: scroll; /* Fix background issues on mobile */
+    }
+}
+
+/* Make sure the container padding is responsive */
+.container {
+    padding: 20px;
+}
+
+@media (max-width: 768px) {
+    .container {
+        padding: 10px; /* Reduce padding for smaller screens */
+    }
+}
+
+@media (max-width: 576px) {
+    .container {
+        padding: 5px; /* Further reduce padding for mobile screens */
+    }
+}
+
+/* Keyframes for background animation */
+@keyframes change {
+    0% {
+        background-image: url(img8.jpg);
+    }
+
+    20% {
+        background-image: url(img2.jpg);
+    }
+
+    40% {
+        background-image: url(img4.jpg);
+    }
+
+    60% {
+        background-image: url(img5.jpg);
+    }
+
+    80% {
+        background-image: url(img6.jpg);
+    }
+
+    100% {
+        background-image: url(img7.jpg);
+    }
+}
